@@ -20,5 +20,6 @@ from GitHelper import views
 
 urlpatterns = [
     url(r'^$', views.index, name="index"),
+    url(r'^handle_url$', views.download, name="download"),
     # url(r'^admin/', include(admin.site.urls)),
 ]
