@@ -47,7 +47,7 @@ def compress(file_7z, dirs, excludes=None, additions=None):
             additions = " " + additions
         compress_cmd += additions
     # add log
-    compress_cmd += " -bb3"
+    # compress_cmd += " -bb3"
     print(compress_cmd)
     execute_7z_command(compress_cmd)
 
