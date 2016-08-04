@@ -1,8 +1,0 @@
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<p> Hello Django, gengjiawen </p>
-
-<form action="/handle_url" method="post">
-    {% csrf_token %}
-    <input id="git_url" type="text" name="git_url" value="{{ current_url }}">
-    <input type="submit" value="Submit" />
-</form>
