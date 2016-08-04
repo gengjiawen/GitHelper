@@ -32,11 +32,11 @@ def download():
 
     # compress code
     code = os.path.join(folder, file_util.get_immdiate_dir(folder)[0]) + ".7z"
-    py7z_util.compress(code, folder + "\*")
+    py7z_util.compress(code, folder + "/*")
     print(git_url)
     response = send_file(code, mimetype='application/x-7z-compressed', as_attachment=True,
                          attachment_filename=ntpath.basename(code))
     return response
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
