@@ -22,6 +22,7 @@ def hello_world():
 def download():
     # http://stackoverflow.com/a/20341272/1713757
     git_url = request.values.get("git_url")
+    print(git_url)
     # git_url = request.form["git_url"]
 
     # download code
@@ -33,10 +34,10 @@ def download():
     # compress code
     code = os.path.join(folder, file_util.get_immdiate_dir(folder)[0]) + ".7z"
     py7z_util.compress(code, folder + "/*")
-    print(git_url)
     response = send_file(code, mimetype='application/x-7z-compressed', as_attachment=True,
                          attachment_filename=ntpath.basename(code))
     return response
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
