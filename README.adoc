@@ -10,6 +10,13 @@ techinicalcute@Gmail.com
 == What can it do
 download github or other repository to a 7z file with _.git_ folder
 
+== dependencies
+Basically, you need to install https://git-scm.com/[git], and http://www.7-zip.org/[7z]
+
+For ubuntu
+[source]
+sudo apt-get install git p7zip-full
+
 == How to play
 [source, python]
 python3 MyFlask.py
