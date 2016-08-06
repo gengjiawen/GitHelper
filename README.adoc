@@ -22,4 +22,5 @@ sudo apt-get install git p7zip-full
 python3 MyFlask.py
 
 == deploy
-# todo
+Please consider this article
+https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04?utm_content=how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04
