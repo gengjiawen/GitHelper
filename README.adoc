@@ -8,10 +8,10 @@ techinicalcute@Gmail.com
 :source-highlighter: hightlightjs
 
 == What can it do
-download github or other repository to a 7z file with _.git_ folder
+download github or other git repository to a 7z file with _.git_ folder
 
-== dependencies
-Basically, you need to install https://git-scm.com/[git], and http://www.7-zip.org/[7z]
+== Dependencies
+Basically, you need to install https://git-scm.com/[git] and http://www.7-zip.org/[7z]
 
 For ubuntu
 [source]
@@ -21,6 +21,13 @@ sudo apt-get install git p7zip-full
 [source, python]
 python3 MyFlask.py
 
-== deploy
-Please consider this article
+== Deploy
+Personally please consider this article
 https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04?utm_content=how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-16-04
+
+== Todo
+* Add auth
+* Add css style.Yes I have some designer daydream, not just a simple software engineer :)
+
+== License
+MIT
