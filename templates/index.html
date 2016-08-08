@@ -2,15 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Download repo easily</title>
+    <title>Download git repo easily</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        html, body {
+            height: 86%;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .form-git {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-control {
+            margin: 10px;
+            min-width: 600px;
+        }
+
+        .form-submit {
+            width: 200px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<p>please input your git url</p>
-<form method="post" action="/download">
-    <input id="git_url" type="text" name="git_url">
-    <input type="submit" value="Submit" />
-</form>
+<div id="container">
+    <form class="form-git" method="post" action="/download">
+        <img src="{{ url_for('static', filename='logo.png') }}" width="425">
+        <input class="form-control" id="git_url" type="text" placeholder="Please input your git url" name="git_url">
+        <button class="form-submit btn btn-lg btn-primary btn-block" type="submit" value="Submit" >Submit</button>
+    </form>
+</div>
 
 </body>
 </html>
